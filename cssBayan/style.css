@@ -23,7 +23,7 @@ body {
 h1 {
   margin: 5px auto 0 auto;
   font-family: "Sacramento", cursive;
-  font-size: 400%;
+  font-size: 200%;
   color: #ff9d98;
 }
 
@@ -34,6 +34,7 @@ h1 {
 .container {
   max-width: 1920px;
   margin: 0 auto;
+  padding-left: 40px;
 }
 .main-container {
   display: flex;
@@ -46,17 +47,61 @@ h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;
   font-weight: normal;
-  color: #a098ff;
 }
 
 .photo {
-  width: 600px;
-  height: 600px;
+  width: 400px;
+  height: 400px;
+}
+
+.photo-claim {
+  position: absolute;
+  width: 50%;
+  color: white;
+  color: transparent;
+  text-shadow: 1px 1px 1px #000;
+  font-weight: bold;
 }
 
 .horizontal-line {
-  display: block;
+  display: flex;
   border: 0.5px solid #aea1a1;
-  width: 100%;
-  margin: 20px 0 auto;
+  width: 250%;
+  margin: 10px 0 auto;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.nav-list {
+  list-style: none;
+  position: relative;
+}
+
+.phrase {
+  text-decoration: none;
+  color: #ff0ff4;
+  font-weight: 800;
+  line-height: 100px;
+}
+
+.hidden-ul {
+  display: none;
+  position: relative;
+  transition: all 0.5s ease-out 0.5s;
+}
+
+nav ul li:hover > ul {
+  display: inherit;
+  transition: all 0.5s ease-out 0.5s;
+}
+
+li:hover > a:after {
+  content: "+";
+}
+
+li:hover > a:after {
+  content: "-";
 }
