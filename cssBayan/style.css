@@ -45,7 +45,7 @@ h1 {
 
 .section {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.5rem;
+  /*font-size: 1.5rem;*/
   font-weight: normal;
   background-color: #98f9ff;
 }
@@ -56,7 +56,7 @@ h1 {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 1%;
+  padding-bottom: 3%;
 }
 
 .horizontal-line {
@@ -67,6 +67,7 @@ h1 {
 
 .nav-list {
   margin: 0 auto;
+  padding: 0;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -93,8 +94,6 @@ h1 {
 
 .plus-icon {
   display: none;
-  width: 25px;
-  height: 25px;
 }
 
 nav ul li:hover > .hidden-ul {
@@ -121,4 +120,17 @@ nav ul li:hover > .hidden-ul {
 }
 
 @media (max-width: 320px) {
+  .container {
+    max-width: 320px;
+  }
+  .phrase {
+    font-size: 60%;
+  }
+  .horizontal-line {
+    width: 100%;
+  }
+  .photo {
+    width: 200px;
+    height: 200px;
+  }
 }
