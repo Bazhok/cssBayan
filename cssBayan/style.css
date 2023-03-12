@@ -51,8 +51,6 @@ h1 {
 }
 
 .photo {
-  width: 400px;
-  height: 400px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -76,10 +74,11 @@ h1 {
 }
 
 .phrase {
+  font-size: 1.5rem;
   text-decoration: none;
   color: #ff0ff4;
   font-weight: bold;
-  line-height: 10vh;
+  line-height: 12vh;
 }
 
 .hidden-ul {
@@ -130,7 +129,7 @@ nav ul li:hover > .hidden-ul {
     width: 100%;
   }
   .photo {
-    width: 200px;
-    height: 200px;
+    width: 60%;
+    height: 60%;
   }
 }
