@@ -14,17 +14,18 @@ body {
   flex-direction: column;
   justify-content: space-between;
   font-family: "Merriweather", serif;
-  font-size: 18px;
-  font-weight: 400;
+  font-size: 1rem;
+  font-weight: bold;
   color: #ff9d98;
 }
 
 h1 {
   font-family: "Sacramento", cursive;
-  font-size: 60px;
+  font-size: 3rem;
   color: #ff9d98;
   margin: 0;
-  padding-left: 35px;
+  padding-left: 2%;
+  padding: 0;
 }
 
 .header {
@@ -34,13 +35,12 @@ h1 {
 .container {
   max-width: 1780px;
   margin: 0 auto;
-  position: relative;
 }
 
 .wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 10px 70px;
+  padding: 0.5% 10%;
 }
 
 .section {
@@ -51,65 +51,61 @@ h1 {
 }
 
 .photo {
-  width: 500px;
-  height: 500px;
-}
-
-.photo-claim {
-  font-size: 25px;
-  position: absolute;
-  width: 100%;
-  padding: 15px;
-  color: white;
-  color: transparent;
-  text-shadow: 1px 1px 1px #000;
-  font-weight: bold;
+  width: 400px;
+  height: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 1%;
 }
 
 .horizontal-line {
   border: 0.5px solid #aea1a1;
-  width: 1500px;
-  margin: 15px auto;
+  width: 300%;
+  margin: 0 auto;
 }
 
 .nav-list {
-  margin: 0;
+  margin: 0 auto;
   list-style: none;
-  position: relative;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-}
-
-.claim-sign-div {
-  max-width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  cursor: pointer;
 }
 
 .phrase {
   text-decoration: none;
   color: #ff0ff4;
-  font-weight: 800;
-  line-height: 100px;
+  font-weight: bold;
+  line-height: 10vh;
 }
 
 .hidden-ul {
   display: none;
-  position: relative;
+
   transition: all 0.5s ease-out 0.5s;
 }
 
 .close-icon {
-  padding-left: 100px;
+  display: none;
 }
 
-nav ul li:hover > ul {
+.plus-icon {
+  display: none;
+  width: 25px;
+  height: 25px;
+}
+
+nav ul li:hover > .hidden-ul {
   display: inherit;
   transition: all 0.5s ease-out 0.5s;
 }
-
-li:hover > a:after {
-  content: "-";
+.nav-list:hover > .plus-icon {
+  display: inline-flex;
+  transition: all 0.5s ease-out 0.5s;
+}
+.nav ul li:hover > .close-icon {
+  display: inline-flex;
+  transition: all 0.5s ease-out 0.5s;
 }
