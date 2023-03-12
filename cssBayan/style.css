@@ -107,5 +107,6 @@ nav ul li:hover > .hidden-ul {
 }
 .nav ul li:hover > .close-icon {
   display: inline-flex;
+  margin-left: 90%;
   transition: all 0.5s ease-out 0.5s;
 }
